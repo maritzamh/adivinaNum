@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Number guessing game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título del juego -->
+        <h1>Number guessing game</h1>
+        <!-- Descripción del juego -->
+        <p>We have selected a random number between 1 and 100. Try to guess it in 10 tries or less. We'll tell you if your guess was too high or too low.</p>
+        
+        <!-- Formulario para que el jugador ingrese su suposición -->
+        <div class="form">
+            <label for="guessField">Enter an assumption: </label>
+            <input type="number" min="1" max="100" required id="guessField" class="guessField">
+            <input type="submit" value="Enviar suposición" class="guessSubmit">
+        </div>
+        
+        <!-- Área donde se mostrarán los resultados del juego -->
+        <div class="resultParas">
+            <p class="guesses"></p> <!-- Suposiciones anteriores del jugador -->
+            <p class="lastResult"></p> <!-- Último resultado de la suposición del jugador -->
+            <p class="lowOrHi"></p> <!-- Indicador de si la suposición fue demasiado alta o demasiado baja -->
+        </div>
+       
+    </div>
+    
+    <!-- Se carga el script JavaScript que contiene la lógica del juego -->
+    <script src="script.js"></script>
+</body>
+</html>
